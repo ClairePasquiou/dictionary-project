@@ -1,4 +1,5 @@
 import React from "react";
+import Example from "./Example.js";
 
 export default function Meaning(props) {
   console.log(props.meaning);
@@ -8,6 +9,7 @@ export default function Meaning(props) {
      <div className="definition">
       {props.meaning.definition}
      </div>
+     <Example example={props.meaning.example}/>
      
     </div>
   );
