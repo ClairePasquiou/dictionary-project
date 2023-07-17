@@ -42,9 +42,11 @@ function load (){
 if (loaded) {
   return (
     <div className="Dictionary">
+        <h1>What word are you looking for?</h1>
+
       <section>
         <form onSubmit={handleSubmit}>
-          <input type="search" onChange={handleKeywordChange} />
+          <input type="search" onChange={handleKeywordChange} defaultValue={props.defaultKeyword}/>
         </form>
         <div className="hint">i.e: sunset, books, toronto, running</div>
       </section>
